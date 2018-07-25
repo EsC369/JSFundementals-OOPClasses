@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+
+function Car(damage){
+    this.damage = damage;
+    this.color = "black";
+    this.bump = function(car){
+      car.damage += 1;
+      this.damage +=1;
+      return this;
+    }
+  }
+  
+  newcar = new Car(0);
+  newcar2 = new Car(5);
+  
+  newcar.bump(newcar2).bump(newcar2);
+  
+  console.log(newcar2.damage)
+  console.log(newcar.damage)
+</script>
+</head>
+<body>
+    
+</body>
+</html>

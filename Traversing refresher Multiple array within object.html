@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script>
+      let users = {
+    employees: [
+        {'first_name':  'Miguel', 'last_name' : 'Jones'},
+        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+    ],
+    managers: [
+       {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+       {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+    ]
+ };
+
+function show(){
+    console.log("Employees:");
+    for(var i=0; i<users.employees.length; i++){
+        console.log(users.employees[i].first_name, users.employees[i].last_name)
+    }
+    console.log("Managers:");
+    for (var i=0; i<users.managers.length; i++){
+        console.log(users.managers[i].first_name, users.managers[i].last_name)
+    }
+}
+show();
+
+    </script>  
+</head>
+<body> 
+</body>
+</html>
